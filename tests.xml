@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="10" time="0.107" timestamp="2025-01-01T03:23:39.274041+07:00" hostname="MSI"><testcase classname="test.test_calculator.BasicCalculator" name="test_add" file="test\test_calculator.py" line="5" time="0.001" /><testcase classname="test.test_calculator.BasicCalculator" name="test_divide" file="test\test_calculator.py" line="17" time="0.000" /><testcase classname="test.test_calculator.BasicCalculator" name="test_multiply" file="test\test_calculator.py" line="13" time="0.000" /><testcase classname="test.test_calculator.BasicCalculator" name="test_substract" file="test\test_calculator.py" line="9" time="0.000" /><testcase classname="test.test_serverlogs.test_serverLogs" name="test_parse" file="test\test_serverlogs.py" line="5" time="0.005"><failure message="TypeError: TestCase.assertIsNone() takes from 2 to 3 positional arguments but 4 were given">self = &lt;test.test_serverlogs.test_serverLogs testMethod=test_parse&gt;
+
+    def test_parse(self):
+        errors = None
+        log_file_path = "logs/server.logs"
+        print("Absolute path:", os.path.abspath(log_file_path))
+        if not os.path.exists(log_file_path):
+            print("not exist")
+        else:
+            print("File Logs Exist")
+            parser = parserLogs()
+            errors = parser.parse_logs(log_file_path)
+            print("ERRORS ", errors)
+            if errors:
+                errors = parser.summarizeErrors(errors)
+            else:
+                print("no error found   ")
+&gt;       self.assertIsNone(errors, "Expected errors, but got None.", errors)
+E       TypeError: TestCase.assertIsNone() takes from 2 to 3 positional arguments but 4 were given
+
+test\test_serverlogs.py:21: TypeError</failure></testcase><testcase classname="verify_pack.test_calculator.VerifyCalculatorTest" name="test_add" file="verify_pack\test_calculator.py" line="5" time="0.001" /><testcase classname="verify_pack.test_calculator.VerifyCalculatorTest" name="test_divide" file="verify_pack\test_calculator.py" line="17" time="0.000" /><testcase classname="verify_pack.test_calculator.VerifyCalculatorTest" name="test_minus" file="verify_pack\test_calculator.py" line="9" time="0.000" /><testcase classname="verify_pack.test_calculator.VerifyCalculatorTest" name="test_multiply" file="verify_pack\test_calculator.py" line="13" time="0.000" /><testcase classname="verify_pack.test_serverlogs.test_serverLogs" name="test_parse" file="verify_pack\test_serverlogs.py" line="5" time="0.001" /></testsuite></testsuites>

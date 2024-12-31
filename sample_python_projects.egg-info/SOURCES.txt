@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+sample_python_projects.egg-info/PKG-INFO
+sample_python_projects.egg-info/SOURCES.txt
+sample_python_projects.egg-info/dependency_links.txt
+sample_python_projects.egg-info/entry_points.txt
+sample_python_projects.egg-info/requires.txt
+sample_python_projects.egg-info/top_level.txt
+test/test_calculator.py
+test/test_serverlogs.py

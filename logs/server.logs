@@ -1,0 +1,14 @@
+2025-01-01T08:00:01 INFO Server started successfully.
+2025-01-01T08:05:13 INFO User logged in: username=admin
+2025-01-01T08:10:24 DEBUG API request received: GET /api/status
+2025-01-01T08:11:30 ERROR 500 Internal Server Error: Unable to connect to database.
+2025-01-01T08:15:45 WARNING High memory usage detected: 95%
+2025-01-01T08:20:00 CRITICAL Timeout occurred while processing payment request.
+2025-01-01T08:22:12 INFO Health check passed.
+2025-01-01T08:25:03 ERROR Connection refused: Port 8080 not reachable.
+2025-01-01T08:30:15 DEBUG Cache cleared for user session: id=12345
+2025-01-01T08:35:00 INFO Scheduled maintenance started.
+2025-01-01T08:36:45 ERROR Failed to write to disk: No space left on device.
+2025-01-01T08:40:00 CRITICAL Disk I/O failure detected. Server shutting down.
+2025-01-01T08:45:00 INFO Server restarted successfully after crash.
+2025-01-01T08:50:20 DEBUG New connection established: IP=192.168.1.10

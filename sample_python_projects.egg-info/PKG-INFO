@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: sample-python-projects
+Version: 1.0.0
+Author: Devskiller.com
+Author-email: support@devskiller.com
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-timeout; extra == "dev"
